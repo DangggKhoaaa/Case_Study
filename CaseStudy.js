@@ -160,6 +160,7 @@ function getMaxId(){
 function btnEditClick(id){
     document.getElementById("table_2").style.display = "block";
     document.getElementById("table_1").style.display = "none";
+    document.getElementsByClassName("btnDel")[0].style.display = "none";
     document.getElementById("idEdit").value = id;
 
     let menu = findMenuById(id)
